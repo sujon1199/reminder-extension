@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.reminder-overlay {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(37, 99, 235, 0.2), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(168, 85, 247, 0.2), transparent 30%),
+    #0f172a;
+}
+
+.reminder-card {
+  width: min(100%, 980px);
+  padding: 40px;
+  border-radius: 28px;
+  background: rgba(17, 24, 39, 0.95);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 25px 80px rgba(0,0,0,0.45);
+  text-align: center;
+}
+
+.reminder-badge {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.18);
+  color: #bfdbfe;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.reminder-title {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 60px);
+  line-height: 1.25;
+  word-break: break-word;
+}
+
+.reminder-subtitle {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #cbd5e1;
+}
+
+.reminder-actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dismiss-btn,
+.snooze-btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 14px;
+  padding: 14px 22px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.dismiss-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.snooze-btn {
+  background: #2563eb;
+  color: white;
+}
