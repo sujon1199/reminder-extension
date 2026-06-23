@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Reminder Notes Extension",
+  "version": "1.0.0",
+  "description": "Notes, folders and reminder extension",
+  "permissions": [
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "reminder.html",
+        "reminder.js",
+        "reminder.css",
+        "sounds/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
